@@ -1,18 +1,26 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bacacao;
 
-/**
- *
- * @author Vilma Gaming
- */
 public class Product {
+    private String name;
+    private double price;
 
-    Product(String laptop, double d) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
     }
-    
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    @Override
+    public String toString() {
+        return name + ": $" + price;
+    }
 }
+
