@@ -10,5 +10,9 @@ package bacacao;
  * @author Vilma Gaming
  */
 public class Product {
+
+    Product(String laptop, double d) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

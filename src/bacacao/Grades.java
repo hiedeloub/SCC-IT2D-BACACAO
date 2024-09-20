@@ -10,5 +10,13 @@ package bacacao;
  * @author Vilma Gaming
  */
 public class Grades {
+
+    void addGrade(Grade grade) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getAverage() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
