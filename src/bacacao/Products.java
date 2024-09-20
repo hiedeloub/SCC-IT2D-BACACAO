@@ -9,6 +9,10 @@ public class Products {
     Products(String laptop, double d) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    Products() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public void addProducts(int id,String name, double pr, int stcks, int sld){
         this.pid = id;
@@ -25,5 +29,9 @@ public class Products {
         String status = (this.stocks > 0) ? "Available" : "Out-of-Stocks";
         
         System.out.printf("%-10d %-10s %-10.2f %-10d %-10d %-10.2f %-10.2f %-10s",pid, pname, price, stocks, sold, profit, tep, status);
+    }
+
+    void addProduct(Product product) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

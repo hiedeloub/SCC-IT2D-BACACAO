@@ -1,22 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package bacacao;
 
-/**
- *
- * @author Vilma Gaming
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Grades {
+    private final List<Grade> grades;
 
-    void addGrade(Grade grade) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Grades() {
+        this.grades = new ArrayList<>();
     }
 
-    String getAverage() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void addGrade(Grade grade) {
+        grades.add(grade);
     }
-    
+
+    public List<Grade> getGrades() {
+        return grades;
+    }
+
+    public double getAverage() {
+        return grades.stream().mapToInt(Grade::getScore).average().orElse(0.0);
+    }
 }
